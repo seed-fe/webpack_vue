@@ -1,0 +1,21 @@
+{
+  "name": "webpack_vue",
+  "version": "1.0.0",
+  "description": "learn webpack and vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "vue",
+    "npm"
+  ],
+  "author": "Bill",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.5",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.5"
+  }
+}
