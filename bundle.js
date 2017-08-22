@@ -67,15 +67,22 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-document.getElementById('app').innerHTML = "这是我第一个打包成功的程序";
-// 添加
-__webpack_require__(1);
-// !style-loader!css-loader!是指定loader
-__webpack_require__(2);
-// require("./style.css")
+module.exports = __webpack_require__(1);
+
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+document.getElementById('app').innerHTML = "这是我第一个打包成功的程序";
+// 添加
+__webpack_require__(2);
+// !style-loader!css-loader!是指定loader
+__webpack_require__(3);
+// require("./style.css")
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports) {
 
 var h2 = document.createElement('h2');
@@ -83,13 +90,13 @@ h2.innerHTML = "不是吧，那么快第二个打包程序啦！";
 document.body.appendChild(h2);
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(3);
+var content = __webpack_require__(4);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -97,7 +104,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(5)(content, options);
+var update = __webpack_require__(6)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -114,21 +121,21 @@ if(false) {
 }
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)(undefined);
+exports = module.exports = __webpack_require__(5)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "body {\r\n\tbackground-color: #2d8ff7;\r\n}", ""]);
+exports.push([module.i, "body {\r\n\tbackground-color: #297bd9;\r\n}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 /*
@@ -210,7 +217,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -256,7 +263,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(6);
+var	fixUrls = __webpack_require__(7);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -569,7 +576,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports) {
 
 
