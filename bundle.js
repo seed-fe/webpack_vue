@@ -1,3 +1,4 @@
+/*! 这里是打包文件头部注释 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -104,7 +105,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(6)(content, options);
+var update = __webpack_require__(8)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -129,7 +130,7 @@ exports = module.exports = __webpack_require__(5)(undefined);
 
 
 // module
-exports.push([module.i, "body {\r\n\tbackground-color: #297bd9;\r\n}", ""]);
+exports.push([module.i, "body {\r\n\tbackground-color: #297bd9;\r\n}\r\n#qwe {\r\n\twidth: 18px;\r\n\theight: 22px;\r\n\tbackground: url(" + __webpack_require__(6) + ") no-repeat 0 0;\r\n}\r\n#asd {\r\n\twidth: 1200px;\r\n\theight: 300px;\r\n\tbackground: url(" + __webpack_require__(7) + ") no-repeat 0 0;\r\n}", ""]);
 
 // exports
 
@@ -218,6 +219,18 @@ function toComment(sourceMap) {
 
 /***/ }),
 /* 6 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAWCAMAAAD6gTxzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA3lBMVEUAAADrlxj+3mnsmxb/0Yj+znvurhz8gQf8gwbdjTngjwz31XXxjwXTYwLiShj9fQGXpbyep7Keo6vDz9OMnbiSqcLFxcZ5kbeXoKuLnq/+5qL+1Ij/+6v/8nb622j/947/78X/0x3/6lv+6WnuuYPRcAP/5i/rxajXhxz23LP/50j+mAffnmThlEvYpX/5xBy8OQH+pw7/5AP82UL/eQLHhVb4yWD7tA39vT/DUh3pv0n8t2btsjfurhz/gQL/jQukp6j8olD4hBfXrZrOzs7FxcbZ29y9v77t7u0AAADVJBmsAAAAGnRSTlMAEJUrzGyFnMv9uP5s/j3lEj2p/dj9h2eC/idK5KQAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAABH0lEQVQY01VQgVKCQBA9EBUVFEyzDhDQAzxOWS5NqETTUPv/L0qOGas382Zn37zdfbMI1ZBkWUL/0FAwVhr3VmrKioVtB1uK3KytranlurZ3o42nLSG1/dls7pEA27bjt4Wkhs7cjYJFh9qxr4pVLHTwMiDeKkismFXLuuD3AoE0TafQRUjjL75DKE3SiFLihFxDKgeIO8Ki68s1cBX1NwBrK31dppG+2kK26d8yMMit5I3oNKA9YFUKaZC9V0PVgUU+EPFVnn8QQno3bnO1Ts8AYLerWPA6vbZnLCsKAM4Oe01IxmdyPLEC2OmYfJlCGj6UZbk6HDrnsryMKsUcjsaX86Ommdfv8WhY29DkOjaE/en+V+N5Uhfz9/WTv+UHbwwmIl7JVyQAAAAASUVORK5CYII="
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "47fdb07721df1412c529565fe0c18667.jpg";
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -263,7 +276,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(7);
+var	fixUrls = __webpack_require__(9);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -576,7 +589,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 7 */
+/* 9 */
 /***/ (function(module, exports) {
 
 

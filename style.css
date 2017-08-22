@@ -1,3 +1,13 @@
 body {
-	background-color: #297bd9;
+	background-color: #2d8ff7;
+}
+#qwe {
+	width: 18px;
+	height: 22px;
+	background: url("img/logo.png") no-repeat 0 0;
+}
+#asd {
+	width: 1200px;
+	height: 300px;
+	background: url("img/banner.jpg") no-repeat 0 0;
 }
